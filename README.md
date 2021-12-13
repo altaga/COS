@@ -152,11 +152,11 @@ If everything worked correctly we should see the following.
 
 Inside the code folder, check in detail the scripts that the machine will run to do all the deployment, the deployment will run on EC2 as an Apache server.
 
-[Code/scripts](https://github.com/altaga/../../../WebPage/scripts)
+[WebPage/scripts](https://github.com/altaga/COS/tree/main/WebPage/scripts)
 
 In turn, the details of the deployment are defined in the file.
 
-[Code/appspec.yml](https://github.com/altaga/../../../WebPage/appspec.yml)
+[WebPage/appspec.yml](https://github.com/altaga/COS/blob/main/WebPage/appspec.yml)
 
 Since everything worked correctly we should see that the pipeline is like this.
 
@@ -165,27 +165,17 @@ Since everything worked correctly we should see that the pipeline is like this.
 ## Check Deployment:
 
 CarrierIP:
-[155.146.24.214](http://155.146.24.214)
+[155.146.81.80](http://155.146.81.80)
 
 Now we can check that our application is correctly deployed when entering a device with 5G thanks to the NOVA platform.
 
-<img src="./Images/Cloud/scupdeploy.png">
+<img src="./Images/Cloud/cosdeploy.png">
 
 Here we can see how the page is not accessible if we are not connected to a Verizon 5G zone, in this case the pc is connected to a normal local internet.
 
-<img src="./Images/Cloud/scupdeployfail.png">
+<img src="./Images/Cloud/cosdeployfail.png">
 
 # App UI:
-
-The tests were being carried out on a cell phone.
-
-[Samsung Galaxy S20+ 5G (SM-G986U)](https://www.samsung.com/us/business/products/mobile/phones/galaxy-s/galaxy-s20-plus-5g-512gb-unlocked-sm-g986uzkexaa/)
-
-With a speed of 1246Mbps
-
-<img src="./Images/Cloud/speed.png" width="33%">
-
-The app for the test will be reviewed only the mobile version since it is the access we have from NOVA. Although the app is a PWA so it can work on a desktop connected to a Wavelength zone too if you want to try it.
 
 ## **Login Screen**:
 
@@ -195,12 +185,6 @@ Login Credentials:
 
     Email:drgregoryhouse@gmail.com
     Password:toor
-
-**Desktop**:
-
-<img src="./Images/desktop/login-desk.png">
-
-**Mobile**:
 
 <img src="./Images/mobile/login-mob.png" width="32%">
 
@@ -224,20 +208,6 @@ The data received by the oxygen saturation sensor are:
 
 <img src="./Images/sat.png">
 
-Temperature:
-
-This sensor takes the temperature of the patient's hand.
-
-<img src="https://i.stack.imgur.com/HK7op.gif" width="1000" />
-
-To calculate the real temperature of the body, a multivariable linear regression model was performed to obtain an equation that would relate the temperature of the back of the hand and the ambient temperature, to obtain the real internal temperature of the body.
-
-<img src="https://i.ibb.co/Rgm108g/image.png" width="1000">
-
-The data received by the platform is the calculated core body temperature.
-
-<img src="./Images/temp.png">
-
 Tab Explorer:
 
 This section helps us to navigate between the 5 tabs that the monitor consists of.
@@ -250,11 +220,7 @@ In this section we can see the patient's data, in addition to having a convenien
 
 <img src="./Images/data.png">
 
-**Desktop**:
-
-<img src="./Images/desktop/monitor-desk.png">
-
-**Mobile**:
+**Monitor Tab**:
 
 <img src="./Images/mobile/monitor-mob.png" width="32%"><img src="./Images/mobile/monitor2-mob.png" width="32%"><img src="./Images/mobile/monitor3-mob.png" width="32%">
 
@@ -262,23 +228,11 @@ In this section we can see the patient's data, in addition to having a convenien
 
 In the summary we can see a summary of the general data of the patient and manipulate them as the doctor sees fit, all these data will be permanently modified once the submit button is clicked.
 
-**Desktop**:
-
-<img src="./Images/desktop/summary-desk.png">
-
-**Mobile**:
-
 <img src="./Images/mobile/summary-mob.png" width="32%">
 
 ## **Report**: 
 
 In this section the doctor will be able to fill in the data obtained during the consultation, the vital signs data are filled in automatically while the data is received. 
-
-**Desktop**:
-
-<img src="./Images/desktop/report-desk.png">
-
-**Mobile**:
 
 <img src="./Images/mobile/report-mob.png" width="32%">
 
@@ -286,35 +240,17 @@ In this section the doctor will be able to fill in the data obtained during the 
 
 All the data that cannot be added through the report can be filled in this section, to be able to add tables, images or any type of additional data that is required.
 
-**Desktop**:
-
-<img src="./Images/desktop/notes-desk.png">
-
-**Mobile**:
-
 <img src="./Images/mobile/editor-mob.png" width="32%">
 
 ## **Past Reports**:
 
 In order to review the previous reports of any patient, once you select the patient, the dates of the previous reports will automatically appear so that you can display them.
 
-**Desktop**:
-
-<img src="./Images/desktop/pastreport-desk.png">
-
-**Mobile**:
-
 <img src="./Images/mobile/pastreport-mob.png" width="32%">
 
 ## **ECG Details**:
 
 In the case of the ECG details, we will have to be receiving ECG data (you can activate the simulator data), once we receive at least 10 - 15 seconds of data, the ECG symbol will turn from gray to red, this means that Once the pressures are done, we will send the data to an ECG analysis API to obtain relevant data for a doctor or physician/cardiologist.
-
-**Desktop**:
-
-<img src="./Images/desktop/ecg-desk.png">
-
-**Mobile**:
 
 <img src="./Images/mobile/ecg-mob.png" width="32%">
 
@@ -323,12 +259,6 @@ In the case of the ECG details, we will have to be receiving ECG data (you can a
 This tab has the function of displaying the stored data of the patients in their consultations, which is downloaded from a database that is updated as the patient has consultations.
 
 To display the data we have to select the patient and then move on the calendar to review the data of the day that we need to display.
-
-**Desktop**:
-
-<img src="./Images/desktop/historical-desk.png">
-
-**Mobile**:
 
 <img src="./Images/mobile/historical1-mob.png" width="32%"><img src="./Images/mobile/historical-mob.png" width="32%">
 
@@ -340,7 +270,7 @@ This tab has the function of simulating the data in real time of a patient durin
 
 To Test this application enter here first!:
 
-Pending LINK!
+[155.146.81.80](http://155.146.81.80)
 
 With these login credentials:
 
@@ -352,46 +282,26 @@ With these login credentials:
 You can follow the next video to use the application:
 
 Video: Click on the image
-[![DEMO](./Images/click-here-button.png)](https://youtu.be/hMcxbMPezFI)
+[![DEMO](./Images/click-here-button.png)](https://youtu.be/QIH5dQ6RyjY)
 
 Or the following Instructions:
 
 To test the simulator, we must log in to the page first:
 
-<img src="https://i.ibb.co/F6jrfcq/1.png">
+<img src="./Images/Testing/Screenshot_20211213-113657_Gallery.jpg" height="500px">
 
 Then, we will select one of the patients, in this case Victor Altamirano. We can see that no data appears yet.
 
-<img src="https://i.ibb.co/ZxRvYpK/2.png">
+<img src="./Images/Testing/Screenshot_20211213-113728_Gallery.jpg" height="500px">
 
 Next, we go to the simulator tab. Select the patient we want to simulate and click on the buttons on the right, this will simulate one of the sensors.
 
-<img src="https://i.ibb.co/kBRzXhS/3.png">
+<img src="./Images/Testing/Screenshot_20211213-113817_Gallery.jpg" height="500px">
 
-We will activate the 3 sensors to show how they arrive at the platform at the same time.
+We will activate the 2 sensors to show how they arrive at the platform at the same time.
 
-<img src="https://i.ibb.co/ZhJgdwd/4.png">
+<img src="./Images/Testing/Screenshot_20211213-113829_Gallery.jpg" height="500px">
 
 To see this go back to the monitor tab.
 
-<img src="https://i.ibb.co/1LfnjyF/5.png">
-
-Then deactivate 2 of them to show that now only the temperature arrives!
-
-<img src="https://i.ibb.co/k6Qsgcm/7.png">
-
-Only Temp arrives!
-
-<img src="https://i.ibb.co/pzqPSjR/8.png">
-
-You can now check and play with various combinations of this.
-
-**Desktop**:
-
-<img src="./Images/desktop/simul-desk.png">
-
-**Mobile**:
-
-<img src="./Images/mobile/simulator-mob.png" width="32%">
-
-
+<img src="./Images/Testing/Screenshot_20211213-113843_Gallery.jpg" height="500px">
