@@ -8,7 +8,10 @@
  
 - [Cardiac Operating System](#cardiac-operating-system)
 - [Table of contents:](#table-of-contents)
-- [Introduction:](#introduction)
+  - [Introduction, Inspiration and Problem](#introduction-inspiration-and-problem)
+      - [But what if we can change that?](#but-what-if-we-can-change-that)
+  - [Why 5G?](#why-5g)
+- [COS](#cos)
 - [Connection Diagram:](#connection-diagram)
   - [Server:](#server)
   - [App Diagram:](#app-diagram)
@@ -25,6 +28,7 @@
   - [CodeDeploy:](#codedeploy)
   - [Review:](#review)
   - [Check Deployment:](#check-deployment)
+- [WIO-Terminal:](#wio-terminal)
 - [App UI:](#app-ui)
   - [**Login Screen**:](#login-screen)
   - [**Monitor Tab**:](#monitor-tab)
@@ -62,7 +66,6 @@ And that's the second problem, the current meeting apps do not meet the healthca
 <img src="https://camo.githubusercontent.com/2a9c957a2f1d04f365575f0fc0e4e7520bfc79cd4455f5b450a0681c2cb84400/68747470733a2f2f696f742d616e616c79746963732e636f6d2f77702f77702d636f6e74656e742f75706c6f6164732f323032302f31312f496f542d636f6e6e656374696f6e732d746f74616c2d6e756d6265722d6f662d6465766963652d636f6e6e656374696f6e732d6d696e2e706e67"> 
 
 So, in essence we have two main problems for this application nowadays, Scalability and congestion of 4G networks and both are solved with 5G networks.
-
 
 
 # COS
@@ -202,6 +205,32 @@ Now we can check that our application is correctly deployed when entering a devi
 Here we can see how the page is not accessible if we are not connected to a Verizon 5G zone, in this case the pc is connected to a normal local internet.
 
 <img src="./Images/Cloud/cosdeployfail.png">
+
+# WIO-Terminal:
+
+Para poder visualizar los datos de los sensores sin necesidad de la webpage, tambien el paciente contara con un monitor basado en la board [WIO-Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html).
+
+[WIO-Terminal Code](./Hardware%20Code/WIO%20Terminal/WIO-Terminal.ino)
+
+Aqui algunas imagenes y videos de la Terminal recibiendo datos de los sensores.
+
+SPO2 Data:
+
+<img src="./Images/HW/spo2.png" width="70%">
+<img src="./Images/HW/spo3.png" width="70%">
+
+Video: Click on the image
+
+[![DEMO](./Images/click-here-button.png)](https://youtu.be/FVNcG1BuEhg)
+
+ECG Data:
+
+<img src="./Images/HW/ecg1.png" width="70%">
+<img src="./Images/HW/ecg2.png" width="70%">
+
+Video: Click on the image
+
+[![DEMO](./Images/click-here-button.png)](https://youtu.be/QIH5dQ6RyjY)
 
 # App UI:
 
