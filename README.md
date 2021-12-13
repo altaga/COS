@@ -37,7 +37,35 @@
   - [**Simulator Tab**:](#simulator-tab)
       - [Functionality:](#functionality)
 
-# Introduction:
+DISCLAIMER: This application is used for demonstrative and illustrative purposes only and does not constitute an offering that has gone through regulatory review. It is not intended to serve as a medical application. There is no representation as to the accuracy of the output of this application and it is presented without warranty.
+
+## Introduction, Inspiration and Problem
+
+The Current COVID-19 pandemic changed everything. From the way we do business, congregate, transport and most specially the way we go to the doctor and take care of our health. This made Telemedicine one if not the way to move forward regarding simple patient care. So, we decided to research what kind of solutions we are adopting. 
+
+Sometimes telemedicine software is offered as a standalone platform, but these days it's not unusual to find it also provided within existing medical practice management (PM) software. 
+Even standalone telemedicine platforms will often easily integrate with other medical software, such as for Electronic Health Records (EHR) or  to make it easier to work with patient histories, making it easier to diagnose or treat medical conditions.
+ (1).
+
+But that's the main problem. The sophistication of a system does not matter if few people are using it (at sometimes prohibitive costs) and it has no reach to zones where it was intended to operate. Also, most systems are way too cumbersome to use, have very old UI's and are not adaptable to modern needs.
+Even though we have several, very sophisticated systems **they have not reached mass market**, are too hard to use and do not provide useful data.
+
+And that's the second problem, the current meeting apps do not meet the healthcare needs regarding just taking Biometrics or following up patients and self care.
+
+#### But what if we can change that?
+
+## Why 5G?
+
+5G has grabbed the attention of people everywhere (both good and bad), but most people only have heard of its promises at giving more speed, better coverage and reduce congestion. But 5G is much more than just fast downloads; its unique combination of high-speed connectivity, very low latency, and ubiquitous coverage will support smart vehicles and transport infrastructure such as connected cars, trucks, and buses, where a split-second delay could mean the difference between a smooth flow of traffic and a 4-way crash at an intersection. This of course, is vital for Telemedicine applications.
+
+5G will enable us to control more devices remotely in applications where real-time network performance is critical, such as remote surgery. To be fair for the IoT promise to become a reality it needs of 5G and mesh networks which is the only other viable option for the billions of devices that will be connected to the internet in the coming years.
+<img src="https://camo.githubusercontent.com/2a9c957a2f1d04f365575f0fc0e4e7520bfc79cd4455f5b450a0681c2cb84400/68747470733a2f2f696f742d616e616c79746963732e636f6d2f77702f77702d636f6e74656e742f75706c6f6164732f323032302f31312f496f542d636f6e6e656374696f6e732d746f74616c2d6e756d6265722d6f662d6465766963652d636f6e6e656374696f6e732d6d696e2e706e67"> 
+
+So, in essence we have two main problems for this application nowadays, Scalability and congestion of 4G networks and both are solved with 5G networks.
+
+
+
+# COS
 
 Smart telemedicine platform, based on IoT devices that provide Vital signs and historical values. This to transform the way telemedicine is provided and solve the biggest problem in relation to distance check-ups, which is taking biometrics. Our current version consists of an Oxygen Saturation Thimble, an ECG sensor and a contactless Thermometer that can send real time information to a Teams application. This allowing distance consultations and follow ups to become more seamless and to grab a real biometrics and vital signs while doing them.
 
