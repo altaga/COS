@@ -221,7 +221,7 @@ SPO2 Data:
 
 Video: Click on the image
 
-[![DEMO](./Images/click-here-button.png)](https://youtu.be/FVNcG1BuEhg)
+[![DEMO](./Images/click-here-button.png)](https://youtu.be/6tsS2xQ4BX0)
 
 ECG Data:
 
@@ -230,7 +230,7 @@ ECG Data:
 
 Video: Click on the image
 
-[![DEMO](./Images/click-here-button.png)](https://youtu.be/QIH5dQ6RyjY)
+[![DEMO](./Images/click-here-button.png)](https://youtu.be/FVNcG1BuEhg)
 
 # App UI:
 
