@@ -208,11 +208,11 @@ Here we can see how the page is not accessible if we are not connected to a Veri
 
 # WIO-Terminal:
 
-Para poder visualizar los datos de los sensores sin necesidad de la webpage, tambien el paciente contara con un monitor basado en la board [WIO-Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html).
+In order to view the sensor data without the need for the webpage, the patient will also have a monitor based on the board. [WIO-Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html).
 
 [WIO-Terminal Code](./Hardware%20Code/WIO%20Terminal/WIO-Terminal.ino)
 
-Aqui algunas imagenes y videos de la Terminal recibiendo datos de los sensores.
+Here are some images and videos of the Terminal receiving data from the sensors.
 
 SPO2 Data:
 
